@@ -395,7 +395,7 @@ span img{
 }
 
 .create-btn-parent .create-btn:hover.create-btn{
-  /* background-color: #8c4ee4; */
+  background-color: #8c4ee4;
   border: 1px solid #8c4ee4;
 }
 .create-btn-parent .splBtn{
