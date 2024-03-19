@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Mochiy+Pop+P+One&family=Rubik+Glitch+Pop&display=swap');
+
+
+*{
+  font-family: "Poppins";
+}
+.form-inline{
+  width: 500px;
+  border: 2px solid ;
+  padding: 20px 15px;
+  text-align: center;
+  color: #9d75cf;
+  box-shadow: 6px 6px 12px gray
+  /* -2px -1px 12px gray; */
+  ;
+  
+}
+#form-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:600px;
+  flex-direction: column;
+}
+#form-div h3{
+  text-align: center;
+  color: #9d75cf;
+}
+.custom-table{
+ border: 3px solid #9d75cf;
+ color: #9d75cf;
+ 
+}
+
+
+
+/* .create-btn-parent .create-btn:hover{
+  background-color: #fff;
+  color:#8c4ee4 ;
+} */
+
+
+
+
+.table-parent{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.table-parent tbody tr td{
+  color:#fff;
+  background-color: #9d75cf;
+}
+.table-parent thead tr th{
+  background-color:#cebce3
+}
+
+.nav-item::after{
+content:'';
+width: 0%;
+height: 2px;
+background-color: #fff;
+display: block;
+}
+
+.desc{
+  display: none;
+  background-color: transparent;
+  color: #9d75cf;
+  border: 1px solid #9d75cf;
+  /* background-color: #996dcf; */
+  /* color:white; */
+  position: absolute;
+  margin-top: 40px;
+  padding: 7px 15px;
+  border-radius: 20px;
+  border-top-left-radius: 0px;
+}
+
+.nav-link:hover + .desc {
+  display: block;
+}
+
+/* .nav-item:hover::after{
+  width: 100%;
+
+} */
+
+.nav-item .nav-link{
+  color: #fff;
+}
+.nav-item .nav-link:hover{
+  color:#fff;
+  /* color: #9d75cf; */
+}
+.nav-item .active{
+  opacity: 0.5;
+}
+.nav-item{
+  font-size: 25px;
+}npm :start
+
+/* home page */
+
+
+#main-page{
+position: relative;
+width: 100%;
+/* background: url("./images/new3.jpg"),rgba(0, 0, 0, 0.3); */
+background-size: cover;
+background-repeat: no-repeat;
+height: 89vh;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+}
+
+
+#main-page  #words h1{
+  color: #641eb9;
+ /* color: #fff; */
+  font-size: 100px;
+}
+#main-page  #words h4{
+  /* color: #8c4ee4; */
+  font-weight: 500px;
+  color: #5c11b8;
+  /* color: #fff; */
+}
+
+#main-page #cardDiv{
+/* height: 86vh; */
+height: 500px;
+width: 40%;
+
+}
+#home-btn{
+border: none;
+background-color: #8c4ee4;
+padding: 20px;
+border-radius: 50px;
+font-size: 30px;
+color: white;
+}
+
+#main-page #cardDiv img{
+  height: 86vh;
+  /* height: 100%; */
+  /* border-radius: 60px 20px 60px 20px; */
+}
+#main-page #cardDiv #card{
+  overflow: hidden;
+  border-radius: 60px 20px 60px 20px;
+  
+}
+
+
+@keyframes forward{
+  from{
+    margin-left: 20px;
+    
+  }
+  to{
+    margin-left: 100px;
+   
+  }
+}
+
+
+
+
+.homeBg{
+  width: 100%;
+  height:88vh;
+  overflow: hidden;
+  display: flex;
+  padding: 40px 30px 40px 30px;
+  justify-content: center;
+  align-items: center;
+  background: url(./images/newPic2.jpg);
+  /* background-color: black; */
+  position: relative;
+}
+
+.home-card{
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* transform: translateY(50%); */
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+
+.home-card h6{
+  animation: fadein 2s;
+}
+
+@keyframes fadein{
+  from{
+    opacity:0
+  }
+  50%{
+    opacity: .5;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.home-card h1{
+color :#6705a8
+}
+
+/* .overLay{
+  height: fit-content;
+  background-color: none;
+  border: none; */
+
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+ 
+/* } */
+/* .overLay h2{
+  color: #6215c0;
+  background: transparent;
+} */
+/* .homeBg img{
+  display: block;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: .4;
+  
+} */
+
+.home-carosel{
+  position: absolute;
+  width: 100%;
+  height: 89vh;
+}
+.home-carosel img{
+  height: 89vh;
+  opacity: .8;
+  
+}
+
+
+.home-flex{
+  display: flex;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.my-card{
+  width: 100%;
+  height: 100%;
+  /* width: 100%; */
+}
+
+img{
+  height: 500px;
+  
+}
+.home-page{
+  position: absolute;
+  top: 96px;
+  display: flex;
+  height: 88vh;
+  padding: 10px 30px;
+  justify-content: center;
+  align-items: center;
+}
+.home-page img{
+  width: 100%;
+  height: 60vh;
+} 
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 101%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.overlay-card{
+  background-color: black;
+
+}
+
+.overlay h2 {
+  background-color: none;
+  font-size: 100px;
+  margin-bottom: 10px;
+  color: #7009ee;
+
+  text-align: left;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  width: 100%;
+  border-right: .15em solid #5e0ebe; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ /* letter-spacing: .15em;   */
+  animation: 
+    typing 3.5s steps(20, end),
+    blink-caret .75s step-end infinite ;
+}
+
+.overlay p {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+}
+span img{
+
+  width: 50px;
+  height: 50px;
+}
+/* img{
+  width: 50%;
+  /* opacity: .9; */
+  /* height: 100%; 
+} */
+
+.carousel-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.carousel-overlay img {
+  width: 200px; /* Adjust size as needed */
+  height: 200px;
+}
+
+
+.home-card h1 {
+  text-align: left;
+  font-size: 84px;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  width: 100%;
+  border-right: .15em solid #5e0ebe; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ /* letter-spacing: .15em;   */
+  animation: 
+    typing 3.5s steps(20, end),
+    blink-caret .75s step-end infinite ;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #5c11b8; }
+}
+/* .home-img .img-cover{
+  position: absolute;
+  left: 0;
+  top: 92px;
+  width: 100%;
+  height: 88.5%;
+  background-color: rgba(255,255,255,.7);
+} */
+.img-cover h1{
+  color: #9d75cf;
+  text-align:  center;
+}
+
+.create-btn-parent .create-btn{
+ background:transparent;
+ border: 1px solid #8c4ee4;
+ color: #8c4ee4;
+ font-weight: bold;
+}
+
+.create-btn-parent .create-btn:hover.create-btn{
+  /* background-color: #8c4ee4; */
+  border: 1px solid #8c4ee4;
+}
+.create-btn-parent .splBtn{
+  background-color: #8c4ee4;
+  color: #fff;
+}
+
+.create-btn-parent .splBtn:hover.splBtn{
+  background: white;
+  color: #8c4ee4;
+}
+
+.form-inline .create-btn{
+ background:transparent;
+ border: 1px solid #8c4ee4;
+ color: #8c4ee4;
+ font-weight: bold;
+}
+
+.form-inline .create-btn:hover.create-btn{
+  /* background-color: #8c4ee4; */
+  border: 1px solid #8c4ee4;
+}
+
+.input-box:hover,
+.input-box:focus {
+  border: 4px solid #8c4ee4 !important;
+  box-shadow: none !important;
+
+  /* border-color: #8c4ee4; Change border color on hover and focus */
+}
+
+.create-btn-parent{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/* create form */
+
+@media screen and (max-width:500px){
+  /* #main-page #words h1{
+    font-size: 30px;
+  } */
+  .form-inline{
+    width: 350px;
+    margin: 5px;
+  }
+  .overlay h2{
+    width: 70%;
+    text-align: center;
+  }
+
+
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 70% }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #5c11b8; }
+  }
+
+}
+
+
+
+
+@media screen and (max-width:1100px){
+  /* #main-page{
+   padding-left: 30px;
+  }
+  #main-page #words h1{
+    font-size: 72px;
+  }
+
+#main-page #cardDiv{
+
+  width: 80%;
+
+  }
+  #main-page #words{
+    width: 80%;
+  } */
+  .home-page{
+    flex-direction: column;
+   
+  }
+  .overlay h2{
+    font-size: 56px;
+  }
+  .overlay p{
+    font-size: 16px;
+  }
+}
+
+/* @media screen and (max-width:400px){
+
+  .form-inline{
+    width: 300px;
+  }
+.form-div{
+  width: 350px;
+}
+  .create-card{
+   width: fit-content;
+  }
+
+} */
+@media screen and (max-width:600px){
+  .form-inline{
+    width: 400px;
+  }
+  .home-page{
+    padding: 0px 10px;
+  }
+  .overlay h2{
+    font-size: 30px;
+  }
+  .overlay p{
+    font-size: 14px;
+  }
+}
+
+
+
+
