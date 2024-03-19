@@ -101,9 +101,9 @@ export default function Deposit() {
                             </Form>
                         </Card> </>
                 </div>
-                <Footer position="fixed" />
+                
             </>
         }
-
+<Footer position="fixed" />
     </>)
 }
