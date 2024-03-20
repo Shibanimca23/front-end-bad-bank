@@ -38,7 +38,9 @@ export default function Withdraw(){
         else{
                 
             await axios.put(`https://server-h269.onrender.com/update/${id}`,{amount:total-withdraw}).then( setTotal(total - withdraw)).then(alert(`amount ${withdraw} is withdrawn successfully !`));
+            setWithdraw('')
         }
+        
     }
 
     function changeHandler(val,setter){
@@ -58,7 +60,7 @@ export default function Withdraw(){
         setDetails(true);
     }
     else{
-        alert("Enter correct details")
+        alert("Enter correct account holder name and password")
     }
       
     
@@ -73,9 +75,9 @@ export default function Withdraw(){
             
             <Card>
                 <Form className="form-inline" onSubmit={userHandler}>
-                    <h1>User Details</h1>
+                    <h1>Account Details</h1>
                     <Form.Group className="mb-3">
-            <Form.Control type="text" placeholder="Enter userName" onChange={e=>setName(e.target.value)} className="input-box"/>
+            <Form.Control type="text" placeholder="Enter Account holder name" onChange={e=>setName(e.target.value)} className="input-box"/>
         </Form.Group>
         <Form.Group className="mb-3">
             <Form.Control type="password" placeholder="Enter password" onChange={(e)=>setPass(e.target.value)} className="input-box"/>
@@ -94,7 +96,7 @@ export default function Withdraw(){
         <Form.Group className="mb-3">
             <Form.Control type="number" placeholder="Enter amount"  onChange={(e)=>changeHandler(Number(e.target.value),setWithdraw)} className="input-box"/>
         </Form.Group>
-            <Button type='submit' className='create-btn' style={{backgroundColor:'#9d75cf' , color:'white', borderColor:'#9d75cf'}}>Withdraw</Button>
+            <Button type='submit' className='create-btn' style={{backgroundColor:'#9d75cf' , color:'white', borderColor:'#9d75cf'}} value={withdraw}>Withdraw</Button>
     </Form>
     </Card>
     </div>
