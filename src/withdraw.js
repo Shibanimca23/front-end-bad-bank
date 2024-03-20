@@ -38,7 +38,7 @@ export default function Withdraw(){
         else{
                 
             await axios.put(`https://server-h269.onrender.com/update/${id}`,{amount:total-withdraw}).then( setTotal(total - withdraw)).then(alert(`amount ${withdraw} is withdrawn successfully !`));
-            setWithdraw()
+            setWithdraw('')
         }
         
     }
