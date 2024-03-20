@@ -7,7 +7,7 @@ import Footer from "./footer";
 export default function Withdraw(){
 
     
-    const [withdraw,setWithdraw]=useState(0);
+    const [withdraw,setWithdraw]=useState();
     const[data,setData]=useState([])
     var [total,setTotal]=useState();
     const[name,setName]=useState('');
