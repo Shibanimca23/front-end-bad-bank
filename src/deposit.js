@@ -22,7 +22,6 @@ export default function Deposit() {
                 setData(item.data);
                 console.log(data);
 
-
             })
         }
         fetchdata();
@@ -42,6 +41,7 @@ export default function Deposit() {
         else {
 
             await axios.put(`https://server-h269.onrender.com/update/${id}`, { amount: total + deposit }).then(setTotal(total + deposit)).then(alert(`amount ${deposit} is deposited successfully !`));
+            setDeposit('')
 
         }
     }
@@ -57,7 +57,7 @@ export default function Deposit() {
             setDetails(true);
         }
         else {
-            alert("Enter correct details")
+            alert("Enter correct account holder name and password")
         }
 
 
@@ -73,9 +73,9 @@ export default function Deposit() {
 
                         <Card>
                             <Form className="form-inline" onSubmit={userHandler}>
-                                <h1>User Details</h1>
+                                <h1>Account Details</h1>
                                 <Form.Group className="mb-3">
-                                    <Form.Control type="text" placeholder="Enter userName" onChange={e => setName(e.target.value)} className="input-box"/>
+                                    <Form.Control type="text" placeholder="Enter Account holder name" onChange={e => setName(e.target.value)} className="input-box"/>
                                 </Form.Group>
                                 <Form.Group className="mb-3">
                                     <Form.Control type="password" placeholder="Enter password" onChange={(e) => setPass(e.target.value)} className="input-box"/>
@@ -95,7 +95,7 @@ export default function Deposit() {
                                 <h1>Deposit</h1>
 
                                 <Form.Group className="mb-3">
-                                    <Form.Control type="number" placeholder="Enter amount" onChange={(e) => changeHandler(Number(e.target.value), setDeposit)} className="input-box" />
+                                    <Form.Control type="number" placeholder="Enter amount" onChange={(e) => changeHandler(Number(e.target.value), setDeposit)} className="input-box" value={deposit}/>
                                 </Form.Group>
                                 <Button type='submit' className='create-btn disabled' style={{ backgroundColor: '#9d75cf', color: 'white', borderColor: '#9d75cf' }}>Deposit</Button>
                             </Form>
@@ -104,6 +104,6 @@ export default function Deposit() {
                 
             </>
         }
-<Footer position="fixed" />
+ <Footer  position="fixed"/>
     </>)
 }
